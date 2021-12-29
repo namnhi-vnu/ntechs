@@ -1,0 +1,97 @@
+ul,
+li,
+a,
+button,
+input,
+select,
+textarea {
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.title-p {
+    p {
+        font-weight: 700;
+        font-size: 6em;
+        line-height: 96px;
+        color: $color-main;
+        letter-spacing: -.02em;
+        position: relative;
+        margin-bottom: 25px;
+        padding-left: 91px;
+
+        &::before {
+            content: "";
+            width: 90px;
+            height: 3px;
+            background-color: $color-main;
+            left: 0;
+            bottom: 15px;
+            position: absolute
+        }
+    }
+
+    h2 {
+        font-size: 2.25em;
+        color: $color-black;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin-bottom: 0.5em;
+    }
+}
+
+.icon-box {
+    margin-top: 2em;
+    display: flex;
+
+    &-img {
+        width: 64px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-text {
+        padding-left: 1em;
+
+        h3 {
+            font-size: 1.25em;
+            line-height: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            color: $color-gray;
+            line-height: 1.5em;
+            text-align: justify;
+        }
+    }
+}
+
+.ntechs-btn {
+    margin-top: 1.5em;
+
+    a {
+        display: inline-block;
+        padding: 0.6em 1.5em;
+        border: 1px solid $color-main;
+        border-radius: 6px;
+        font-weight: 600;
+
+        i {
+            padding-left: 0.5em;
+        }
+    }
+
+    a:nth-child(1) {
+        background-color: $color-main;
+        color: $color-white;
+        margin-right: 0.5em;
+    }
+}
+
+.content-home {}

@@ -1,0 +1,123 @@
+.header {
+    .top-bar {
+        background-color: $color-main;
+
+        &__left {
+            padding: 0.5em 0;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+
+            li i {
+                padding-right: 0.5em;
+            }
+
+            li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 0.9em;
+                font-weight: 400;
+            }
+        }
+    }
+
+    // navbar
+    .navbar {
+        display: flex;
+        padding: 3em 0;
+
+        &-logos {
+            width: 150px;
+
+            h1 {
+                font-size: 3em;
+
+                a {
+                    color: $color-black;
+                }
+            }
+
+        }
+
+        &-menus {
+            flex: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+            li {
+                margin: 0 1.5em;
+            }
+
+            li a {
+                color: $color-black;
+                font-weight: 500;
+
+                &:hover {
+                    color: $color-main;
+                }
+            }
+
+            &__form {
+                padding-left: 1em;
+
+                li {
+                    position: relative;
+                }
+
+                li:first-child a {
+                    display: block;
+                    padding: 0.7em 0.5em;
+
+                    .form {
+                        position: absolute;
+                        // background-color: $color-main;
+                        display: none;
+                        padding: 1em;
+                        top: 100%;
+                        left: 0;
+                        border: 3px solid #eee;
+
+                        input {
+                            border: 1px solid #f5f5f5;
+                            padding: 0.5em;
+                            color: $color-black;
+                            border-radius: 1em;
+                        }
+                    }
+
+                }
+
+                li:first-child:hover a {
+                    .form {
+                        display: block;
+                    }
+                }
+
+                li:last-child a {
+                    background-color: $color-main;
+                    padding: 0.6em 1.2em;
+                    border-radius: 6px;
+                    color: $color-white;
+                }
+            }
+        }
+
+        &-menus-mobile {
+
+            display: none;
+
+        }
+    }
+
+}
