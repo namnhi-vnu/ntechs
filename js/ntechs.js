@@ -3,7 +3,7 @@ const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = ["Thương mại điện tử", "App đặt đồ ăn", "Hệ thống ERP", "Số 1 Việt Nam"];
-const typingDelay = 200;
+const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 500; // Delay between current and next text
 let textArrayIndex = 0;
