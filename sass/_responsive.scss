@@ -394,5 +394,23 @@
                 }
             }
         }
+
+        .contact-ntechs-item {
+            display: block;
+
+            .box-text {
+                h2 {
+                    font-size: 1.5em;
+                }
+
+                .btn a {
+                    margin-top: 0.5em;
+                }
+            }
+
+            .box-img {
+                margin: 0;
+            }
+        }
     }
 }
