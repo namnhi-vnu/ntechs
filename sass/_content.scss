@@ -300,6 +300,12 @@
                 opacity: 0.6;
                 cursor: pointer;
                 transition: all 0.5s ease;
+
+                &:hover {
+                    background-color: $color-hover;
+                    opacity: 1;
+                    border-color: $color-hover-border;
+                }
             }
 
             .tab-item.active {
@@ -310,7 +316,7 @@
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                width: 100px;
+                width: 0;
                 height: 6px;
                 border-radius: 15px;
                 background-color: $color-main;
@@ -319,6 +325,9 @@
         }
 
         .products-list {
+            padding: 2em 0;
+            display: none;
+
             .item-box {
                 padding: 1.5em 0;
                 background-color: $color-white;
@@ -355,6 +364,11 @@
                 width: 100%;
                 transition: all 0.3s;
             }
+
+        }
+
+        .products-list.active {
+            display: block;
         }
     }
 }
