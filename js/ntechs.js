@@ -61,7 +61,7 @@ tabs.forEach((tab, index) => {
     };
 });
 console.log(tabs, panes);
-const dangky = getone(".ntechs-btn");
+const dangky = getall(".ntechs-btn");
 const pagentechs = getone('.wrapper');
 dangky.forEach((tab, index) => {
     pagentechs.classList.remove("active");
