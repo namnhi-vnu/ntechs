@@ -91,6 +91,9 @@
 }
 
 .main {
+    width: 100%;
+    overflow: hidden !important;
+
     .business {
         padding: 1.5em 0;
         background-image: url('../images/nen-shop-cloud-9.png');
@@ -235,6 +238,8 @@
         height: 100vh;
         padding: 1em 0;
         position: relative;
+        width: 100%;
+        overflow: hidden;
 
         .img-inner {
             text-align: center;
@@ -265,7 +270,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         padding: 2em 0;
-
+        width: 100%;
+        overflow: hidden;
 
         &--title {
             h2 {
@@ -369,6 +375,135 @@
 
         .products-list.active {
             display: block;
+        }
+    }
+}
+
+//
+.main {
+    .why-choose {
+        padding: 2em 0;
+        width: 100%;
+        overflow: hidden;
+
+        &__title {
+            text-align: center;
+            max-width: 77.333%;
+            margin: 0 auto;
+
+            p {
+                text-transform: uppercase;
+                color: $color-main;
+                font-weight: 500;
+                padding-bottom: 0.8em;
+            }
+
+            h2 {
+                font-size: 2.25em;
+                line-height: 56px;
+                font-weight: 700;
+            }
+        }
+
+        &__content {
+            padding: 2em 0;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-gap: 1em;
+        }
+
+        &__item {
+            display: flex;
+            margin-bottom: 0.5em;
+
+            .box-text {
+                padding-left: 0.5em;
+
+                h2 {
+                    font-size: 1.375em;
+                    line-height: 32px;
+                    margin-bottom: 0.5em;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: $color-gray;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    .contact-ntechs {
+        padding: 2em 0;
+
+        &__content {
+            background-image: linear-gradient(#8BC6EC, #9599E2);
+            border-radius: 12px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            .box-text {
+                padding: 2em 2.5em;
+
+                h2 {
+                    font-size: 2em;
+                    color: $color-white;
+                }
+
+                .btn {
+                    margin-top: 2em;
+                }
+
+                .btn a {
+                    font-size: 1.2em;
+                    display: inline-block;
+                    padding: 0.5em 1em;
+                    color: $color-white;
+                    border: 2px solid $color-white;
+                    border-radius: 6px;
+                    margin-right: 0.5em;
+
+                    i {
+                        padding-right: 0.5em;
+                    }
+
+                    &:nth-child(1) {
+                        background-color: $color-main;
+                        border: 2px solid $color-main;
+
+                        &:hover {
+                            background-color: $color-white;
+                            color: $color-main;
+                        }
+                    }
+
+                    &:nth-child(2):hover {
+                        background-color: $color-white;
+                        color: $color-main;
+                        border: 2px solid $color-main;
+                    }
+                }
+            }
+
+            .box-img {
+                margin-top: -3em;
+                margin-bottom: -1em;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
     }
 }
