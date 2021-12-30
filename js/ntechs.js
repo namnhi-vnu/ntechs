@@ -63,9 +63,13 @@ tabs.forEach((tab, index) => {
 console.log(tabs, panes);
 const dangky = getone(".ntechs-btn");
 const pagentechs = getone('.wrapper');
-dangky.addEventListener('click', () => {
-    pagentechs.classList.toggle("active");
+dangky.forEach((tab, index) => {
+    pagentechs.classList.remove("active");
+    tab.onclick = function () {
+        pagentechs.classList.add("active");
+    }
 });
+
 window.onclick = function (event) {
     if (event.target == pagentechs) {
         pagentechs.classList.toggle("active");
