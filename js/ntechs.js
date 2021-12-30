@@ -61,3 +61,13 @@ tabs.forEach((tab, index) => {
     };
 });
 console.log(tabs, panes);
+const dangky = getone(".ntechs-btn");
+const pagentechs = getone('.wrapper');
+dangky.addEventListener('click', () => {
+    pagentechs.classList.toggle("active");
+});
+window.onclick = function (event) {
+    if (event.target == pagentechs) {
+        pagentechs.classList.toggle("active");
+    }
+}

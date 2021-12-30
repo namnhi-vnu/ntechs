@@ -413,4 +413,21 @@
             }
         }
     }
+
+    .ntechs-modal {
+        &__content {
+            min-width: 328px;
+            padding: 1em;
+        }
+
+        &__form {
+            .in-text {
+                display: block;
+
+                input {
+                    margin-top: 0.5em;
+                }
+            }
+        }
+    }
 }
