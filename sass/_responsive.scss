@@ -355,5 +355,21 @@
 
     .main .business {
         background-size: contain;
+
+
+    }
+
+    .main {
+        .aplication-erp .img-inner {
+            min-height: auto;
+            padding-top: 4em;
+
+            img {
+                position: relative;
+                top: inherit;
+                left: inherit;
+                transform: translate(0, 0);
+            }
+        }
     }
 }

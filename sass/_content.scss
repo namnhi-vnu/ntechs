@@ -264,6 +264,8 @@
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
+        padding: 2em 0;
+
 
         &--title {
             h2 {
@@ -274,12 +276,85 @@
             }
         }
 
-        .products-wrapper {}
-
-        .products-tabs {
+        .products-wrapper {
+            padding-top: 2em;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .products-tabs {
+            display: flex;
+            position: relative;
+
+            .tab-item {
+                min-width: 80px;
+                padding: 16px 20px 11px 20px;
+                font-size: 20px;
+                text-align: center;
+                color: $color-main;
+
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom: 5px solid transparent;
+                opacity: 0.6;
+                cursor: pointer;
+                transition: all 0.5s ease;
+            }
+
+            .tab-item.active {
+                opacity: 1;
+            }
+
+            .line {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100px;
+                height: 6px;
+                border-radius: 15px;
+                background-color: $color-main;
+                transition: all 0.2s ease;
+            }
+        }
+
+        .products-list {
+            .item-box {
+                padding: 1.5em 0;
+                background-color: $color-white;
+                border-radius: 6px;
+                cursor: pointer;
+                overflow: hidden;
+
+                &:hover .box-img img {
+                    transform: scale(1.05);
+                    transition: all 0.3s;
+                }
+            }
+
+            .box-text {
+                padding: 1em;
+
+                h2 {
+                    font-size: 1.5em;
+                    color: #333;
+                    line-height: 1.5em;
+                    padding-bottom: 0.5em;
+                }
+
+                p {
+                    padding: 0.5em 1em;
+                    background-color: $color-main;
+                    color: $color-white;
+                    display: inline-block;
+                    border-radius: 6px;
+                }
+            }
+
+            .box-img img {
+                width: 100%;
+                transition: all 0.3s;
+            }
         }
     }
 }
