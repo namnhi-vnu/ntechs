@@ -1,7 +1,22 @@
 AOS.init();
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+const getone = document.querySelector.bind(document);
+const getall = document.querySelectorAll.bind(document);
+const tabs = getall(".tab-item");
+const panes = getall(".products-list");
+const tabActive = getone(".tab-item.active");
+const line = getone(".line");
+// 
+const sety = getone('.year-of-operation');
 
+function getyearss() {
+    const cearted = 2018;
+    const nam = new Date();
+    const newY = nam.getFullYear();
+    sety.innerHTML = newY - cearted;
+}
+getyearss();
+const typedTextSpan = getone(".typed-text");
+const cursorSpan = getone(".cursor");
 const textArray = ["Thương mại điện tử", "App đặt đồ ăn", "Hệ thống ERP", "Số 1 Việt Nam"];
 const typingDelay = 100;
 const erasingDelay = 50;
@@ -38,12 +53,7 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
     if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
-const getone = document.querySelector.bind(document);
-const getall = document.querySelectorAll.bind(document);
-const tabs = getall(".tab-item");
-const panes = getall(".products-list");
-const tabActive = getone(".tab-item.active");
-const line = getone(".line");
+
 line.style.left = tabActive.offsetLeft + "px";
 line.style.width = tabActive.offsetWidth + "px";
 tabs.forEach((tab, index) => {
@@ -60,7 +70,7 @@ tabs.forEach((tab, index) => {
         pane.classList.add("active");
     };
 });
-console.log(tabs, panes);
+
 const dangky = getall(".ntechs-btn");
 const pagentechs = getone('.wrapper');
 dangky.forEach((tab, index) => {

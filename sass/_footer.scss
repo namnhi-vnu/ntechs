@@ -1,6 +1,96 @@
 .footer-wrapper {
-    height: 100vh;
-    background: linear-gradient(#8BC6EC, #9599E2 70%);
-    // background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
+
+    background-image: url(../images/bg-footer.png);
+    background-position: 9% 19%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    position: relative;
     overflow: hidden;
+
+    .footer-wrapper-main {
+        padding: 3em 0 5em 0;
+    }
+
+    .footer-address {
+        &__logos {
+            img {
+                width: 160px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                text-align: center;
+                margin-left: -0.6em;
+                line-height: 1.6em;
+            }
+        }
+
+        &__desc {
+            padding-top: 1em;
+
+            p span {
+                font-weight: 600;
+                color: $color-black;
+            }
+
+            p {
+                line-height: 1.8em;
+                font-size: 1em;
+                color: #333;
+            }
+        }
+    }
+
+    .service {
+        padding-top: 5em;
+
+        ul {
+            margin-top: 1em;
+
+            li {
+                line-height: 1.8em;
+            }
+
+            li a {
+                color: $color-black;
+
+                &:hover {
+                    color: $color-hover;
+                }
+            }
+        }
+
+        ul.social {
+            li {
+                display: inline-block;
+                font-size: 1.3em;
+                margin: 0 0.5em;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            li:last-child a {
+                color: red;
+            }
+
+            li:first-child a {
+                color: #2374E1;
+            }
+        }
+    }
+}
+
+.footer {
+
+    .coppyright {
+        background-color: $color-main;
+        text-align: left;
+        padding: 1em 0;
+        color: #bababa;
+        user-select: none;
+    }
 }

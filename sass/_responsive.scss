@@ -412,6 +412,12 @@
                 margin: 0;
             }
         }
+
+        .specific-number {
+            &__item {
+                border-top: 1px solid #eee;
+            }
+        }
     }
 
     .ntechs-modal {
@@ -428,6 +434,19 @@
                     margin-top: 0.5em;
                 }
             }
+        }
+    }
+
+    .footer-wrapper {
+        .footer-address {
+            &__desc {
+                text-align: center;
+            }
+        }
+
+        .service {
+            padding-top: 0.5em;
+            text-align: center;
         }
     }
 }

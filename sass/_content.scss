@@ -487,8 +487,56 @@
 }
 
 .main {
+    .specific-number {
+        padding: 1em 0;
+
+        margin: 2em 0;
+
+        &__title {
+            text-align: center;
+
+            h2 {
+                font-size: 2.25em;
+                line-height: 2em;
+                padding-bottom: 0.5em;
+            }
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+
+        &__content {
+            border-top: 4px solid $color-main;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.16),
+                0 6px 6px rgba(0, 0, 0, 0.18);
+        }
+
+        &__item {
+            padding: 2.5em;
+            text-align: center;
+            border-right: 1px solid #eee;
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 0.5em;
+            }
+
+            h2 {
+                font-size: 2.2em;
+                line-height: 2em;
+            }
+
+        }
+    }
+}
+
+.main {
     .contact-ntechs {
         padding: 2em 0;
+
 
         &__content {
             background-image: linear-gradient(#8BC6EC, #9599E2);
@@ -544,10 +592,10 @@
 
             .box-img {
                 margin-top: -3em;
-                margin-bottom: -1em;
+                margin-bottom: -0.5em;
 
                 img {
-                    width: 100%;
+                    // width: 100%;
                     height: 100%;
                 }
             }
