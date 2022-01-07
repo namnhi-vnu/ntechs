@@ -192,6 +192,7 @@
 
             .ntechs-btn {
                 @extend .ntechs-btn;
+                cursor: pointer;
             }
         }
     }
@@ -688,6 +689,7 @@
             background-color: $color-main;
             color: $color-white;
             margin-top: 0.5em;
+            cursor: pointer;
         }
     }
 }

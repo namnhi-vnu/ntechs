@@ -85,3 +85,27 @@ window.onclick = function (event) {
         pagentechs.classList.toggle("active");
     }
 }
+
+// Send mail
+const sends = document.querySelector('.btnsubmit');
+
+
+function sendcontact() {
+    const hoten = document.querySelector('.hoten').value;
+    const phones = document.querySelector('.phones').value;
+
+    if (hoten === '' && phones === '') {
+
+    } else {
+        var formData = new FormData();
+        formData.append('entry.182307577', hoten);
+        formData.append('entry.346746103', phones);
+        var request = new XMLHttpRequest();
+        request.open("POST", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLRaDha7FXigyjw_wc6iCigu7w-2FlOFjFR5nnO_g6nNKkTw/formResponse");
+        request.send(formData);
+        setTimeout(function () {
+            location.replace("/index.html");
+        }, 500);
+    }
+
+}
