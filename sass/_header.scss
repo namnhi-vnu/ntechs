@@ -62,6 +62,12 @@
 
             li {
                 margin: 0 1.5em;
+                position: relative;
+                padding: 0.5em 0;
+            }
+
+            li a.menu-main-item.active {
+                color: $color-main;
             }
 
             li a {
@@ -71,6 +77,7 @@
                 &:hover {
                     color: $color-main;
                 }
+
             }
 
             &__form {
@@ -114,6 +121,81 @@
                     padding: 0.6em 1.2em;
                     border-radius: 6px;
                     color: $color-white;
+                }
+            }
+
+            // ul li .sub-menu {
+            //     position: absolute;
+            //     top: 100%;
+            //     left: 0;
+            //     min-width: 200px;
+            //     width: fit-content;
+            //     flex-direction: column;
+            //     border: 1px solid #eee;
+            //     display: none;
+
+            //     li {
+            //         margin: 0;
+            //         text-align: left;
+            //         padding: 0.5em;
+            //         width: 100%;
+            //     }
+            // }
+
+            // ul li:hover .sub-menu {
+            //     display: block;
+            // }
+
+            ul li .sub-menu {
+                position: absolute;
+                display: block;
+                z-index: 9;
+                // background-color: $color-main;
+                min-width: 200px;
+                width: max-content;
+                opacity: 0;
+                top: 100%;
+                visibility: hidden;
+                border-radius: 3px;
+                border: 1px solid #eee;
+
+                li {
+                    // margin: 0.3em;
+                    width: auto;
+                    padding: 0.2em;
+                    border-bottom: 1px dotted $color-hover;
+                }
+
+                li a {
+                    color: $color-black;
+                    padding: 1em 0;
+                    display: inline-block;
+                    text-align: left;
+
+                    &:hover {
+                        color: $color-main;
+                    }
+                }
+            }
+
+            ul li:hover .sub-menu {
+
+                opacity: 1;
+                visibility: inherit;
+                animation-name: animation-submenu;
+                animation-duration: 0.6s;
+
+            }
+
+            @keyframes animation-submenu {
+                0% {
+                    top: 200%;
+                    opacity: 0.4;
+                }
+
+                100% {
+                    top: 100%;
+                    opacity: 1;
                 }
             }
         }

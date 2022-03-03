@@ -24,6 +24,17 @@ const newTextDelay = 500; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
+
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('a.menu-main-item');
+const menulength = menuItem.length;
+for (let i = 0; i < menulength; i++) {
+    if (menuItem[i].href === currentLocation) {
+        menuItem[i].classList.add('active');
+    }
+}
+
+
 function type() {
     if (charIndex < textArray[textArrayIndex].length) {
         if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
@@ -89,7 +100,6 @@ window.onclick = function (event) {
 // Send mail
 const sends = document.querySelector('.btnsubmit');
 
-
 function sendcontact() {
     const hoten = document.querySelector('.hoten').value;
     const phones = document.querySelector('.phones').value;
@@ -107,5 +117,4 @@ function sendcontact() {
             location.replace("/index.html");
         }, 500);
     }
-
 }
