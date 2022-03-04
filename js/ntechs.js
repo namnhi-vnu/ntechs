@@ -7,14 +7,16 @@ const tabActive = getone(".tab-item.active");
 const line = getone(".line");
 // 
 const sety = getone('.year-of-operation');
-
-function getyearss() {
-    const cearted = 2018;
-    const nam = new Date();
-    const newY = nam.getFullYear();
-    sety.innerHTML = newY - cearted;
+if (sety) {
+    function getyearss() {
+        const cearted = 2018;
+        const nam = new Date();
+        const newY = nam.getFullYear();
+        sety.innerHTML = newY - cearted;
+    }
+    getyearss();
 }
-getyearss();
+
 const typedTextSpan = getone(".typed-text");
 const cursorSpan = getone(".cursor");
 const textArray = ["Thương mại điện tử", "App đặt đồ ăn", "Hệ thống ERP", "Số 1 Việt Nam"];

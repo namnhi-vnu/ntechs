@@ -453,4 +453,15 @@
             text-align: center;
         }
     }
+
+    // Blog
+    .content-blog {
+        .trend-news-blog {
+            .trend-item {
+                .desc {
+                    grid-column: inherit;
+                }
+            }
+        }
+    }
 }

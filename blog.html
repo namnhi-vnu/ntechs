@@ -11,73 +11,78 @@
     <meta name=”google” content=”nositelinkssearchbox” />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/2a56f4323d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/govtech.css">
     <link rel="shortcut icon" href="./images/icon-logo.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
     <div id="wrapper" class="wrapper">
         <header id="header" class="header">
-            <div class="header-top top-bar">
+            <div class="header-top top-bar-blog">
                 <div class="container">
                     <div class="row">
                         <div class="pd col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                            <div class="top-bar__left">
-                                <ul class="top-bar__list">
-                                    <li><a href="mailto:info.ntechs@gmail.com"><i class="far fa-envelope"></i>Email:
-                                            info.ntechs@gmail.com</a></li>
-                                    <li><a href="tel:0969464154"><i class="far fa-phone-alt"></i>Phone:
-                                            0969.464.154</a>
-                                    </li>
-                                </ul>
+                            <div class="navbar-logos">
+                                <h1><a href=""><img src="./images/logo-ntechs.png" alt=""></a></h1>
                             </div>
                         </div>
-                        <div class="pd col-12 col-s-12 col-m-4 col-l-4 col-xl-4"></div>
-                        <div class="pd col-12 col-s-12 col-m-4 col-l-4 col-xl-4"></div>
+
+                        <div class="pd col-12 col-s-12 col-m-8 col-l-8 col-xl-8">
+                            <div class="topbar-blog">
+                                <ul>
+                                    <li><a href="">Sản phẩm<i class="fas fa-angle-down"></i></a></li>
+                                    <li><a href="">Tiện ích<i class="fas fa-angle-down"></i></a></li>
+                                    <li><a href="">Thêm<i class="fas fa-angle-down"></i></a></li>
+                                    <li><a href="#">Đăng ký</a></li>
+                                </ul>
+                                <div class="ntechs-search-blog">
+                                    <div class="ntechs-search-btn">
+                                        <span>
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            <div class="form-input">
+                                                <input type="text" placeholder="Nhập từ khóa">
+                                            </div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <nav class="header-main">
+            <nav class="header-main-blog">
                 <div class="container">
-                    <div class="navbar">
-                        <div class="navbar-logos">
-                            <h1><a href=""><img src="./images/logo-ntechs.png" alt=""></a></h1>
-                        </div>
-                        <div class="navbar-menus">
+                    <div class="navbar-blog">
+
+                        <div class="navbar-menus-blog">
                             <ul>
-                                <li><a class="menu-main-item" href="index.html">Báo Giá</a></li>
-                                <li><a class="menu-main-item" href="gioithieu.html">Giải Pháp</a></li>
+                                <li><a class="menu-main-item" href="index.html"><i class="fa fa-home"></i></a>
+                                </li>
+                                <li><a class="menu-main-item" href="index.html">Công Nghệ</a></li>
+                                <li><a class="menu-main-item" href="gioithieu.html">Ngoại Ngữ</a></li>
                                 <li>
-                                    <a class="menu-main-item" href="#">Ứng Dụng <i class="fas fa-angle-down"></i></a>
+                                    <a class="menu-main-item" href="#">Tin Tức - Thế Giới <i
+                                            class="fas fa-angle-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="">App1</a></li>
                                         <li><a href="">Ngôn 2</a></li>
                                         <li><a href="">Ngôn 3</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="menu-main-item" href="khoapp.html">Học Lập Trình</a></li>
-                                <li><a class="menu-main-item" href="blog.html">Blog</a></li>
+                                <li><a class="menu-main-item" href="khoapp.html">Sức Khỏe - Đời Sống</a></li>
+                                <li><a class="menu-main-item" href="blog.html">Kinh Tế</a></li>
                                 <li>
-                                    <a class="menu-main-item" href="lienhe.html">Về NTechs</a>
+                                    <a class="menu-main-item" href="lienhe.html">Hướng Ngiệp</a>
                                     <ul class="sub-menu">
                                         <li><a href="">Giới Thiệu</a></li>
                                         <li><a href="">Liên Hệ</a></li>
-
                                     </ul>
                                 </li>
-
-                            </ul>
-                            <ul class="navbar-menus__form">
-                                <li>
-                                    <a href="#"><i class="fas fa-search"></i>
-                                        <div class="form">
-                                            <input type="text" placeholder="Search...">
-                                        </div>
-                                    </a>
-
-                                </li>
-                                <li class="ntechs-btn"><a href="#">Đăng ký</a></li>
+                                <li><a class="menu-main-item" href="blog.html">Mẹo Vặt</a></li>
                             </ul>
                         </div>
                         <!-- navbar mobile -->
@@ -96,635 +101,341 @@
                     </div>
                 </div>
             </nav>
+            <div class="banner-blog-main">
+                <!-- <img src="./images/bg-banner-blog.jpg" alt=""> -->
+                <h1><a href="#">NTechs Blog</a></h1>
+                <p>Việc đọc rất quan trọng. Nếu bạn biết cách đọc, cả thế giới sẽ mở ra cho bạn.</p>
+            </div>
         </header>
         <main class="main" id="main">
-            <div class="content-area">
-                <section class="banner">
-                    <div class="container">
-                        <div class="banner-content">
-                            <div class="banner-content__left">
-                                <div class="content" data-aos="fade-right" data-aos-duration="2000">
-                                    <h2><span>NTechs</span> - Lập trình </h2>
-                                    <h2>web app, mobile app</h2>
-                                    <h2 class="word-auto">
-                                        <span class="typed-text"></span>
-                                        <span class="cursor">|</span>
-                                    </h2>
-                                    <div class="desc">
-                                        <p>Gia tăng nhận diện, Gắn kết khách hàng, Tăng nhanh doanh số</p>
-                                        <p>và Thúc đẩy quá trình chuyển đổi số!</p>
-
-                                    </div>
-                                    <div class="btn">
-                                        <a href="tel:0969464154">Gọi ngay <i class="far fa-phone-alt"></i></a>
-                                        <a class="ntechs-btn">Tư vấn miễn phí<i class="fab fa-telegram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="banner-content__right">
-                                <div class="content" data-aos="fade-up" data-aos-duration="2000">
-                                    <img src="./images/hop-tac-ntechss-5.png" alt="">
-                                    <span class="affles"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="business">
-                    <div class="container">
-                        <div class="business__title" data-aos="fade-up" data-aos-duration="2000">
-                            <p>Kinh doanh</p>
-                            <h2>Các lĩnh vực chuyên dụng của App mobile</h2>
-                        </div>
-                        <div class="business__content">
-                            <div class="row">
-                                <div class="col-12 col-s-12 col-m-6 col-l-6 col-xl-6">
-                                    <div class="business__content--title" data-aos="fade-right"
-                                        data-aos-duration="1000">
-                                        <p class="number">01.</p>
-                                        <h2>Ứng dụng bán hàng thương mại điện tử</h2>
-                                    </div>
-                                    <div class="text" data-aos="fade-up" data-aos-duration="1000">
-                                        <p>Lập trình ứng dụng, app mobile bán hàng và thương mại điện tử là thế mạnh của
-                                            NTechs. Các sản phẩm của chúng tôi có giao diện đẹp mắt, chuẩn UI/UX, tốc
-                                            độ xử lý tối ưu và độ bảo mật tuyệt đối.</p>
-                                    </div>
-                                    <div class="icon-box" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class=" icon-box-img">
-                                            <div class="icon">
-                                                <div class="icon-inner">
-                                                    <img src="./images/Icon.png" alt="">
+            <div class="content-blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-s-12 col-m-8 col-l-8 col-xl-8">
+                            <div class="main-blog-content">
+                                <section class="content-blog__news blog-news">
+                                    <div class="blog-news-list">
+                                        <!-- Slider main container -->
+                                        <div class="swiper">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide">
+                                                    <a href=""><img src="./images/post1.jpeg" alt=""></a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="icon-box-text">
-                                            <h3>Tiện lợi</h3>
-                                            <p>Mọi thao tác mua hàng đều được thực hiện trên một chiếc Smart phone, mang
-                                                trải nghiệm người dùng của khách hàng nâng lên một tầm cao mới.</p>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class=" icon-box-img">
-                                            <div class="icon">
-                                                <div class="icon-inner">
-                                                    <img src="./images/Icon-1.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="icon-box-text">
-                                            <h3>Nhanh chóng</h3>
-                                            <p>App bán hàng, thương mại điện tử sẽ đồng bộ dữ liệu với website bán hàng
-                                                nên có thể dễ dàng quản lý và nhanh chóng xử lý đơn hàng và các yêu cầu
-                                                khác của khách hàng.</p>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class=" icon-box-img">
-                                            <div class="icon">
-                                                <div class="icon-inner">
-                                                    <img src="./images/Icon_Total-Control.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="icon-box-text">
-                                            <h3>Hiện đại</h3>
-                                            <p>Các tính năng thanh toán trực tuyến, tự động thông báo, kết nối mạng xã
-                                                hội được tích hợp sẵn giúp khách hàng có nhiều sự lựa chọn hơn, thoải
-                                                mái hơn trong mua sắm.</p>
-                                        </div>
-                                    </div>
-                                    <div class="ntechs-btn">
-                                        <a class="ntechs-btn" data-aos="fade-right" data-aos-duration="1000">Đăng ký tư
-                                            vấn<i class="far fa-envelope"></i></a>
-                                        <a data-aos="fade-right" data-aos-duration="1000">Chi tiết<i
-                                                class="far fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="application-app">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-s-12 col-m-6 col-l-6 col-xl-6">
-                                <div class="application-app__title" data-aos="fade-right" data-aos-duration="1000">
-                                    <p class="number">02.</p>
-                                    <h2>Ứng dụng đặt đồ ăn</h2>
-                                </div>
-                                <div class="text" data-aos="fade-up" data-aos-duration="1000">
-                                    <p>Lập trình ứng dụng, app mobile đặt đồ ăn nhanh là thế mạnh của
-                                        NTechs. Các sản phẩm của chúng tôi có giao diện đẹp mắt, chuẩn UI/UX, tốc
-                                        độ xử lý tối ưu và độ bảo mật tuyệt đối.</p>
-                                </div>
-                                <div class="icon-box" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class=" icon-box-img">
-                                        <div class="icon">
-                                            <div class="icon-inner">
-                                                <img src="./images/Icon.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box-text">
-                                        <h3>Tiết kiệm</h3>
-                                        <p>Mọi thao tác mua hàng đều được thực hiện trên một chiếc Smart phone, mang
-                                            trải nghiệm người dùng của khách hàng nâng lên một tầm cao mới.</p>
-                                    </div>
-                                </div>
-                                <div class="icon-box" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class=" icon-box-img">
-                                        <div class="icon">
-                                            <div class="icon-inner">
-                                                <img src="./images/Icon-1.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box-text">
-                                        <h3>Trực quan</h3>
-                                        <p>Người bán đưa ra hình ảnh thực tế, trực quan về sản phẩm. Người mua dễ hình
-                                            dung, dễ đánh giá và nhanh chóng đưa ra quyết định mua hàng.</p>
-                                    </div>
-                                </div>
-                                <div class="icon-box" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class=" icon-box-img">
-                                        <div class="icon">
-                                            <div class="icon-inner">
-                                                <img src="./images/Icon_Total-Control.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box-text">
-                                        <h3>Tiện lợi</h3>
-                                        <p>Các tính năng thanh toán trực tuyến, tự động thông báo, kết nối mạng xã
-                                            hội được tích hợp sẵn giúp khách hàng có nhiều sự lựa chọn hơn, thoải
-                                            mái hơn trong mua sắm.</p>
-                                    </div>
-                                </div>
-                                <div class="ntechs-btn">
-                                    <a href="#" class="ntechs-btn" data-aos="fade-right" data-aos-duration="1000">Đăng
-                                        ký
-                                        tư vấn<i class="far fa-envelope"></i></a>
-                                    <a href="" data-aos="fade-right" data-aos-duration="1000">Chi tiết<i
-                                            class="far fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-s-12 col-m-6 col-l-6 col-xl-6">
-                                <div class="img-inner dark" data-aos="fade-left" data-aos-duration="1000">
-                                    <img src="./images/loi-ich-mang-lai-app-livestream.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="web-app">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-s-12 col-m-6 col-l-6 col-xl-6">
-                                <div class="img-inner dark" data-aos="fade-right" data-aos-duration="1000">
-                                    <img src="./images/loi-ich-mang-lai-app.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 col-s-12 col-m-6 col-l-6 col-xl-6">
-                                <div class="web-app__title" data-aos="fade-left" data-aos-duration="1000">
-                                    <p class="number">03.</p>
-                                    <h2>Ứng dụng Chat Livestream</h2>
-                                </div>
-                                <div class="text" data-aos="fade-up" data-aos-duration="1000">
-                                    <p> Livestream bán hàng là hoạt động không thể thiếu khi kinh doanh online.
-                                        Livestream giúp người bán đưa ra hình ảnh thực tế, trực quan về sản phẩm, giúp
-                                        khách hàng dễ hình dung, dễ đánh giá và nhanh chóng đưa ra quyết định mua hàng.
-                                    </p>
-                                </div>
-                                <div class="icon-box" data-aos="fade-left" data-aos-duration="1000">
-                                    <div class=" icon-box-img">
-                                        <div class="icon">
-                                            <div class="icon-inner">
-                                                <img src="./images/Icon.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box-text">
-                                        <h3>Tiết kiệm</h3>
-                                        <p>Mọi thao tác mua hàng đều được thực hiện trên một chiếc Smart phone, mang
-                                            trải nghiệm người dùng của khách hàng nâng lên một tầm cao mới.</p>
-                                    </div>
-                                </div>
-                                <div class="icon-box" data-aos="fade-left" data-aos-duration="1000">
-                                    <div class=" icon-box-img">
-                                        <div class="icon">
-                                            <div class="icon-inner">
-                                                <img src="./images/Icon-1.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box-text">
-                                        <h3>Trực quan</h3>
-                                        <p>Người bán đưa ra hình ảnh thực tế, trực quan về sản phẩm. Người mua dễ hình
-                                            dung, dễ đánh giá và nhanh chóng đưa ra quyết định mua hàng.</p>
-                                    </div>
-                                </div>
-                                <div class="icon-box" data-aos="fade-left" data-aos-duration="1000">
-                                    <div class=" icon-box-img">
-                                        <div class="icon">
-                                            <div class="icon-inner">
-                                                <img src="./images/Icon_Total-Control.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box-text">
-                                        <h3>Tiện lợi</h3>
-                                        <p>Các tính năng thanh toán trực tuyến, tự động thông báo, kết nối mạng xã
-                                            hội được tích hợp sẵn giúp khách hàng có nhiều sự lựa chọn hơn, thoải
-                                            mái hơn trong mua sắm.</p>
-                                    </div>
-                                </div>
-                                <div class="ntechs-btn">
-                                    <a href="#" class="ntechs-btn" data-aos="fade-left" data-aos-duration="1000">Đăng ký
-                                        tư vấn<i class="far fa-envelope"></i></a>
-                                    <a href="#" data-aos="fade-left" data-aos-duration="1000">Chi tiết<i
-                                            class="far fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="aplication-erp">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-s-12 col-m-6 col-l-6 col-xl-6">
-                                <div class="aplication-erp__title" data-aos="fade-right" data-aos-duration="1000">
-                                    <p class="number">04.</p>
-                                    <h2>Ứng dụng quản lý doanh nghiệp</h2>
-                                </div>
-                                <div class="text" data-aos="fade-up" data-aos-duration="1000">
-                                    <p>Đội ngũ có trình độ chuyên môn cao của NTechs luôn đưa ra các giải pháp tốt
-                                        nhất để xử lý các nghiệp vụ đặc thù của mọi ngành nghề: Spa, Phòng khám, Giáo
-                                        dục, Tài chính, Bảo hiểm …
-                                    </p>
-                                </div>
-                                <div class="icon-box" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class=" icon-box-img">
-                                        <div class="icon">
-                                            <div class="icon-inner">
-                                                <img src="./images/Icon.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box-text">
-                                        <h3>Kinh nghiệm</h3>
-                                        <p>NTechs đã có nhiều năm kinh nghiệm trong việc xây dựng app, ứng dụng hỗ trợ
-                                            hoạt động kinh doanh của các doanh nghiệp trong mọi lĩnh vực, ngành nghề
-                                            kinh doanh.</p>
-                                    </div>
-                                </div>
-                                <div class="icon-box" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class=" icon-box-img">
-                                        <div class="icon">
-                                            <div class="icon-inner">
-                                                <img src="./images/Icon-1.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box-text">
-                                        <h3>Tốc độ</h3>
-                                        <p>Triển khai nhanh chóng với quy trình dự án chuyên nghiệp sẽ giúp doanh nghiệp
-                                            tận dụng được cơ hội kinh doanh nhanh chóng.</p>
-                                    </div>
-                                </div>
-                                <div class="icon-box" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class=" icon-box-img">
-                                        <div class="icon">
-                                            <div class="icon-inner">
-                                                <img src="./images/Icon_Total-Control.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon-box-text">
-                                        <h3>Tiết kiệm</h3>
-                                        <p>Tối ưu chi phí đến 50% bởi NTechs có quy trình làm việc chuẩn, nhân lực
-                                            chuyên môn sâu và định hướng triển khai rõ ràng.</p>
-                                    </div>
-                                </div>
-                                <div class="ntechs-btn">
-                                    <a href="#" class="ntechs-btn" data-aos="fade-right" data-aos-duration="1000">Đăng
-                                        ký tư vấn<i class="far fa-envelope"></i></a>
-                                    <a href="#" data-aos="fade-right" data-aos-duration="1000">Chi tiết<i
-                                            class="far fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-s-12 col-m-6 col-l-6 col-xl-6">
-                                <div class="img-inner dark" data-aos="fade-right" data-aos-duration="1000">
-                                    <img src="./images/banner-home-3-3_auto_x2-1536x905.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="typical-products" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="container">
-                        <div class="typical-products--title" data-aos="fade-up" data-aos-duration="1000">
-                            <h2>Sản Phẩm Tiêu Biểu</h2>
-                        </div>
-                        <div class="products-wrapper">
-                            <div class="products-tabs" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="tab-item active">
-                                    Tất cả
-                                </div>
-                                <div class="tab-item">
-                                    Bán hàng
-                                </div>
-                                <div class="tab-item">
-                                    Doanh nghiệp
-                                </div>
-                                <div class="tab-item">
-                                    ERP
-                                </div>
-                                <div class="line">
-                                </div>
-                            </div>
+                                                <div class="swiper-slide"> <img src="./images/post2.jpeg" alt=""></div>
+                                                <div class="swiper-slide"> <img src="./images/post1.jpeg" alt=""></div>
 
-                        </div>
-                        <div class="products-list all active">
-                            <div class="row">
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-imotor.png" alt="">
                                             </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
+                                            <div class="swiper-pagination"></div>
+                                            <div class="btns-slider">
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-imotor.png" alt="">
-                                            </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-imotor.png" alt="">
-                                            </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </section>
 
                             </div>
                         </div>
-                        <div class="products-list sale">
-                            <div class="row">
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-trung-tam-du-hoc.png" alt="">
+                        <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
+                            <div class="content-blog-sidebar">
+                                <div class="new-today">
+                                    <div class="title">
+                                        <h3><i class="fa-solid fa-book-open-reader"></i>Đọc gì hôm nay</h3>
+                                    </div>
+                                    <div class="list-post">
+                                        <div class="item">
+                                            <a href=""><img src="./images/post3.jpeg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="#">Kinh nghiệm kinh doanh thực phẩm đông lạnh không thể bỏ
+                                                        lỡ</a></h2>
+                                                <p><i class="fa-solid fa-eye"></i>1656 Lượt xem</p>
                                             </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
+                                        </div>
+                                        <div class="item">
+                                            <a href=""><img src="./images/post3.jpeg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="#">Kinh nghiệm kinh doanh thực phẩm đông lạnh không thể bỏ
+                                                        lỡ</a></h2>
+                                                <p><i class="fa-solid fa-eye"></i>1656 Lượt xem</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href=""><img src="./images/post3.jpeg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="#">Kinh nghiệm kinh doanh thực phẩm đông lạnh không thể bỏ
+                                                        lỡ</a></h2>
+                                                <p><i class="fa-solid fa-eye"></i>1656 Lượt xem</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href=""><img src="./images/post3.jpeg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="#">Kinh nghiệm kinh doanh thực phẩm đông lạnh không thể bỏ
+                                                        lỡ</a></h2>
+                                                <p><i class="fa-solid fa-eye"></i>1656 Lượt xem</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href=""><img src="./images/post3.jpeg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="#">Kinh nghiệm kinh doanh thực phẩm đông lạnh không thể bỏ
+                                                        lỡ</a></h2>
+                                                <p><i class="fa-solid fa-eye"></i>1656 Lượt xem</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href=""><img src="./images/post3.jpeg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="#">Kinh nghiệm kinh doanh thực phẩm đông lạnh không thể bỏ
+                                                        lỡ</a></h2>
+                                                <p><i class="fa-solid fa-eye"></i>1656 Lượt xem</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-trung-tam-du-hoc.png" alt="">
-                                            </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
-                                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-s-12 col-m-12 col-l-12 col-xl-12">
+                            <div class="new-synthesis-blog new-synthesis">
+                                <div class="new-synthesis-list">
+                                    <div class="new-synthesis-item">
+                                        <a href="" class="img-post"><img src="./images/post2.jpeg" alt=""></a>
+                                        <div class="category-post">
+                                            <span><a href="#">Kinh doanh và khởi nghiệp</a></span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a></h2>
+                                            <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu đó
+                                                là lưu ký chứng
+                                                khoán. Vậy lưu ký...
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-trung-tam-du-hoc.png" alt="">
-                                            </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
-                                            </div>
+                                    <div class="new-synthesis-item">
+                                        <a href="" class="img-post"><img src="./images/post4.png" alt=""></a>
+                                        <div class="category-post">
+                                            <span><a href="#">Kinh doanh và khởi nghiệp</a></span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a></h2>
+                                            <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu đó
+                                                là lưu ký chứng
+                                                khoán. Vậy lưu ký...
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-trung-tam-du-hoc.png" alt="">
-                                            </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
-                                            </div>
+                                    <div class="new-synthesis-item">
+                                        <a href="" class="img-post"><img src="./images/post4.png" alt=""></a>
+                                        <div class="category-post">
+                                            <span><a href="#">Kinh doanh và khởi nghiệp</a></span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a></h2>
+                                            <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu đó
+                                                là lưu ký chứng
+                                                khoán. Vậy lưu ký...
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-trung-tam-du-hoc.png" alt="">
-                                            </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
-                                            </div>
+                                    <div class="new-synthesis-item">
+                                        <a href="" class="img-post"><img src="./images/post4.png" alt=""></a>
+                                        <div class="category-post">
+                                            <span><a href="#">Kinh doanh và khởi nghiệp</a></span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a></h2>
+                                            <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu đó
+                                                là lưu ký chứng
+                                                khoán. Vậy lưu ký...
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
 
+                                </div>
                             </div>
                         </div>
-                        <div class="products-list enterprise">
-                            <div class="row">
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-imotor.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-s-12 col-m-8 col-l-8 col-xl-8">
+                            <div class="trend-news-blog">
+                                <div class="trend-title">
+                                    <h2><i class="fa-solid fa-laptop-code"></i>Xu hướng Công Nghệ</h2>
+                                </div>
+                                <div class="trend-list">
+                                    <div class="trend-item">
+                                        <a href=""><img src="./images/post5.jpg" alt=""></a>
+                                        <div class="desc">
+                                            <h2><a href="#">Các xu hướng công nghệ năm 2022</a></h2>
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <p class="desc-post">với sự phát triển nhanh tróng của công nghê số thì </p>
+                                        </div>
+                                    </div>
+                                    <div class="trend-item">
+                                        <a href=""><img src="./images/post5.jpg" alt=""></a>
+                                        <div class="desc">
+                                            <h2><a href="#">Các xu hướng công nghệ năm 2022</a></h2>
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <p class="desc-post">với sự phát triển nhanh tróng của công nghê số thì </p>
+                                        </div>
+                                    </div>
+                                    <div class="trend-item">
+                                        <a href=""><img src="./images/post5.jpg" alt=""></a>
+                                        <div class="desc">
+                                            <h2><a href="#">Các xu hướng công nghệ năm 2022</a></h2>
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <p class="desc-post">với sự phát triển nhanh tróng của công nghê số thì </p>
+                                        </div>
+                                    </div>
+                                    <div class="trend-item">
+                                        <a href=""><img src="./images/post5.jpg" alt=""></a>
+                                        <div class="desc">
+                                            <h2><a href="#">Các xu hướng công nghệ năm 2022</a></h2>
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <p class="desc-post">với sự phát triển nhanh tróng của công nghê số thì </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-post-ebook">
+                                <div class="title">
+                                    <h3><i class="fa-solid fa-globe"></i>Ngoại Ngữ</h3>
+                                </div>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide item">
+                                            <div class="desc">
+                                                <a href=""><img src="./images/post1.jpeg" alt=""></a>
+                                                <h2><a href="">5 Bí quyết luyện nói Tiếng Anh mỗi ngày</a></h2>
                                             </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
+                                        </div>
+                                        <div class="swiper-slide item">
+                                            <img src="./images/post3.jpeg" alt="">
+                                        </div>
+                                        <div class="swiper-slide item">
+                                            <img src="./images/post2.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <!-- <div class="swiper-pagination"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
+                            <div class="trend-sidebar-blog">
+                                <div class="trend-sidebar">
+                                    <div class="title">
+                                        <h3><i class="fa-solid fa-user-astronaut"></i>Có thể bạn quan tâm</h3>
+                                    </div>
+                                    <div class="trend-sidebar-list">
+                                        <div class="trend-sidebar-item">
+                                            <a href=""><img src="./images/post6.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">SOS nghĩa là gì? Khi nào nên sử dụng SOS? </a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="trend-sidebar-item">
+                                            <a href=""><img src="./images/post6.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">SOS nghĩa là gì? Khi nào nên sử dụng SOS? </a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="trend-sidebar-item">
+                                            <a href=""><img src="./images/post6.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">SOS nghĩa là gì? Khi nào nên sử dụng SOS? </a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="trend-sidebar-item">
+                                            <a href=""><img src="./images/post6.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">SOS nghĩa là gì? Khi nào nên sử dụng SOS? </a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="trend-sidebar-item">
+                                            <a href=""><img src="./images/post6.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">SOS nghĩa là gì? Khi nào nên sử dụng SOS? </a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="trend-sidebar-item">
+                                            <a href=""><img src="./images/post6.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">SOS nghĩa là gì? Khi nào nên sử dụng SOS? </a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="trend-sidebar-item">
+                                            <a href=""><img src="./images/post6.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">SOS nghĩa là gì? Khi nào nên sử dụng SOS? </a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4"></div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4"></div>
-                            </div>
-                        </div>
-                        <div class="products-list erp">
-                            <div class="row">
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                                    <div class="products-item">
-                                        <div class="item-box">
-                                            <div class="box-img">
-                                                <img src="./images/app-imotor.png" alt="">
-                                            </div>
-                                            <div class="box-text">
-                                                <h2>App IMotor</h2>
-                                                <p>Doanh nghiệp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4"></div>
-                                <div class="col-12 col-s-12 col-m-4 col-l-4 col-xl-4"></div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="why-choose">
-                    <div class="container">
-                        <div class="why-choose__title" data-aos="fade-up" data-aos-duration="1000">
-                            <p>Lý do lựa chọn</p>
-                            <h2>Lý do giúp NTechs có thể đồng hành với hơn 400 doanh nghiệp</h2>
-                        </div>
-                        <div class="why-choose__content">
-                            <div class="why-choose__list" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="why-choose__item" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class="box-img">
-                                        <img src="./images/Icon-4.png" alt="">
-                                    </div>
-                                    <div class="box-text">
-                                        <h2>Giải pháp thông minh</h2>
-                                        <p>Tối ưu hóa mọi quy trình trong hoạt động kinh doanh và tăng trưởng doanh
-                                            nghiệp.</p>
-                                    </div>
-                                </div>
-                                <div class="why-choose__item" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class="box-img">
-                                        <img src="./images/Icon-1-1.png" alt="">
-                                    </div>
-                                    <div class="box-text">
-                                        <h2>Tối ưu chi phí</h2>
-                                        <p>Luôn có những định hướng triển khai rõ ràng giúp doanh nghiệp có mức chi phí
-                                            đầu tư thấp nhất.</p>
-                                    </div>
-                                </div>
-                                <div class="why-choose__item" data-aos="fade-left" data-aos-duration="1000">
-                                    <div class="box-img">
-                                        <img src="./images/Icon-2-1.png" alt="">
-                                    </div>
-                                    <div class="box-text">
-                                        <h2>Đồng hành công nghệ</h2>
-                                        <p>Định hướng tương lai và đồng hành phát triển công nghệ với mọi doanh nghiệp.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="why-choose__item" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class="box-img">
-                                        <img src="./images/Icon-5.png" alt="">
-                                    </div>
-                                    <div class="box-text">
-                                        <h2>Đổi mới & Sáng tạo</h2>
-                                        <p>Cập nhật xu thế, tìm kiếm giải pháp mới nhằm mang đến giá trị lợi nhuận tốt
-                                            nhất cho khách hàng.</p>
-                                    </div>
-                                </div>
-                                <div class="why-choose__item" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="box-img">
-                                        <img src="./images/Icon-4-1.png" alt="">
-                                    </div>
-                                    <div class="box-text">
-                                        <h2>Kinh nghiệm & kỹ năng</h2>
-                                        <p>Thực hiện được nhiều dự án xây dựng phần mềm, lập trình ứng dụng phù hợp với
-                                            nghiệp vụ nhiều lĩnh vực.</p>
-                                    </div>
-                                </div>
-                                <div class="why-choose__item" data-aos="fade-left" data-aos-duration="1000">
-                                    <div class="box-img">
-                                        <img src="./images/Icon-3-1.png" alt="">
-                                    </div>
-                                    <div class="box-text">
-                                        <h2>98.99% satisfaction</h2>
-                                        <p>Chỉnh chu từ việc “lắng nghe” khách hàng, xây dựng và phát triển sản phẩm đến
-                                            các dịch vụ hậu mãi.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="contact-ntechs">
-                    <div class="container">
-                        <div class="contact-ntechs__content">
-                            <div class="contact-ntechs__boxs">
-                                <div class="contact-ntechs-item">
-                                    <div class="box-text" data-aos="fade-right" data-aos-duration="1000">
-                                        <h2>Bạn đang muốn triển khai một ứng dụng, app mobile? Gọi ngay cho NTechs
-                                        </h2>
-                                        <div class="btn">
-                                            <a href="tel:0969464154" data-aos="fade-right" data-aos-duration="1000"><i
-                                                    class="far fa-phone-alt"></i>0969.464.154</a>
-                                            <a href="#" class="ntechs-btn" data-aos="fade-right"
-                                                data-aos-duration="1000"><i class="far fa-envelope"></i>Đăng ký tư
-                                                vấn</a>
-                                        </div>
-                                    </div>
-                                    <div class="box-img" data-aos="fade-up" data-aos-duration="1000">
-                                        <img src="./images/Frame-698.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="specific-number">
-                    <div class="container">
-                        <div class="specific-number__title" data-aos="fade-up" data-aos-duration="1000">
-                            <h2>Những Thống Kê</h2>
-                        </div>
-                        <div class="specific-number__content" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="specific-number__list">
-                                <div class="specific-number__item">
-                                    <img src="./images/medal-star.png" alt="">
-                                    <h2><span class="year-of-operation"></span>+</h2>
-                                    <p>Năm hoạt động</p>
-                                </div>
-                                <div class="specific-number__item">
-                                    <img src="./images/Badge-3.png" alt="">
-                                    <h2>400+</h2>
-                                    <p>Doanh nghiệp đồng hành</p>
-                                </div>
-                                <div class="specific-number__item">
-                                    <img src="./images/Icon_Transparency.png" alt="">
-                                    <h2>8,000+</h2>
-                                    <p>Dự án đã thực hiện</p>
-                                </div>
-                                <div class="specific-number__item">
-                                    <img src="./images/Badge.png" alt="">
-                                    <h2>3,000+</h2>
-                                    <p>Đánh giá 5*</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </main>
         <div class="ntechs-modal">
@@ -816,7 +527,8 @@
         </footer>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/ntechs.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/ntechs-blog.js"></script>
 </body>
 
 </html>
