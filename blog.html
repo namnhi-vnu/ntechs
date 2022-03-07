@@ -23,30 +23,26 @@
         <header id="header" class="header">
             <div class="header-top top-bar-blog">
                 <div class="container">
-                    <div class="row">
-                        <div class="pd col-12 col-s-12 col-m-4 col-l-4 col-xl-4">
-                            <div class="navbar-logos">
-                                <h1><a href=""><img src="./images/logo-ntechs.png" alt=""></a></h1>
-                            </div>
+                    <div class="navbar-topbar">
+                        <div class="navbar-topbar-logos">
+                            <a href=""><img src="./images/logo-ntechs.png" alt=""></a>
                         </div>
-                        <div class="pd col-12 col-s-12 col-m-8 col-l-8 col-xl-8">
-                            <div class="topbar-blog">
-                                <ul>
-                                    <li><a href="">Sản phẩm<i class="fas fa-angle-down"></i></a></li>
-                                    <li><a href="">Tiện ích<i class="fas fa-angle-down"></i></a></li>
-                                    <li><a href="">Thêm<i class="fas fa-angle-down"></i></a></li>
-                                    <li><a href="#">Đăng ký</a></li>
-                                </ul>
-                                <div class="ntechs-search-blog">
-                                    <div class="ntechs-search-btn">
-                                        <span>
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                            <div class="form-input">
-                                                <input type="text" placeholder="Nhập từ khóa">
-                                            </div>
-                                        </span>
+                        <div class="topbar-blog">
+                            <ul>
+                                <li><a href="">Sản phẩm<i class="fas fa-angle-down"></i></a></li>
+                                <li><a href="">Tiện ích<i class="fas fa-angle-down"></i></a></li>
+                                <li><a href="">Thêm<i class="fas fa-angle-down"></i></a></li>
+                                <li><a href="#">Đăng ký</a></li>
+                            </ul>
+                            <div class="ntechs-search-blog">
+                                <div class="ntechs-search-btn">
+                                    <span>
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <div class="form-input">
+                                            <input type="text" placeholder="Nhập từ khóa">
+                                        </div>
+                                    </span>
 
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -100,12 +96,13 @@
                     </div>
                 </div>
             </nav>
-            <div class="banner-blog-main">
-                <!-- <img src="./images/bg-banner-blog.jpg" alt=""> -->
-                <h1><a href="#">NTechs Blog</a></h1>
-                <p>Việc đọc rất quan trọng. Nếu bạn biết cách đọc, cả thế giới sẽ mở ra cho bạn.</p>
-            </div>
+
         </header>
+        <div class="banner-blog-main">
+            <!-- <img src="./images/bg-banner-blog.jpg" alt=""> -->
+            <h1><a href="#">NTechs Blog</a></h1>
+            <p>Việc đọc rất quan trọng. Nếu bạn biết cách đọc, cả thế giới sẽ mở ra cho bạn.</p>
+        </div>
         <main class="main" id="main">
             <div class="content-blog">
                 <div class="container">
@@ -115,7 +112,7 @@
                                 <section class="content-blog__news blog-news">
                                     <div class="blog-news-list">
                                         <!-- Slider main container -->
-                                        <div class="swiper">
+                                        <div class="swiper new-blog">
                                             <!-- Additional required wrapper -->
                                             <div class="swiper-wrapper">
                                                 <!-- Slides -->
@@ -221,7 +218,7 @@
                                     <div class="new-synthesis-item">
                                         <a href="" class="img-post"><img src="./images/post4.png" alt=""></a>
                                         <div class="category-post">
-                                            <span><a href="#">Kinh doanh và khởi nghiệp</a></span>
+                                            <span><a href="post-detail.html">Kinh doanh và khởi nghiệp</a></span>
                                         </div>
                                         <div class="desc">
                                             <span>
@@ -330,24 +327,98 @@
                                 <div class="title">
                                     <h3><i class="fa-solid fa-globe"></i>Ngoại Ngữ</h3>
                                 </div>
-                                <div class="swiper mySwiper">
+                                <div class="swiper slider-language">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide item">
                                             <div class="desc">
                                                 <a href=""><img src="./images/post1.jpeg" alt=""></a>
-                                                <h2><a href="">5 Bí quyết luyện nói Tiếng Anh mỗi ngày</a></h2>
+                                                <div>
+                                                    <h2><a href="">5 Bí quyết luyện nói Tiếng Anh mỗi ngày</a></h2>
+                                                    <span>
+                                                        <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                        <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                    </span>
+                                                    <p class="desc-post">Luyện nói Tiếng Anh mỗi ngày sẽ giúp bạn phát
+                                                        âm chuẩn các từ trong tiếng Anh để có thể tự tin...</p>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide item">
-                                            <img src="./images/post3.jpeg" alt="">
+                                            <div class="desc">
+                                                <a href=""><img src="./images/post1.jpeg" alt=""></a>
+                                                <div>
+                                                    <h2><a href="">5 Bí quyết luyện nói Tiếng Anh mỗi ngày</a></h2>
+                                                    <span>
+                                                        <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                        <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                    </span>
+                                                    <p class="desc-post">Luyện nói Tiếng Anh mỗi ngày sẽ giúp bạn phát
+                                                        âm chuẩn các từ trong tiếng Anh để có thể tự tin...</p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide item">
-                                            <img src="./images/post2.jpeg" alt="">
+                                            <div class="desc">
+                                                <a href=""><img src="./images/post1.jpeg" alt=""></a>
+                                                <div>
+                                                    <h2><a href="">5 Bí quyết luyện nói Tiếng Anh mỗi ngày</a></h2>
+                                                    <span>
+                                                        <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                        <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                    </span>
+                                                    <p class="desc-post">Luyện nói Tiếng Anh mỗi ngày sẽ giúp bạn phát
+                                                        âm chuẩn các từ trong tiếng Anh để có thể tự tin...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide item">
+                                            <div class="desc">
+                                                <a href=""><img src="./images/post1.jpeg" alt=""></a>
+                                                <div>
+                                                    <h2><a href="">5 Bí quyết luyện nói Tiếng Anh mỗi ngày</a></h2>
+                                                    <span>
+                                                        <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                        <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                    </span>
+                                                    <p class="desc-post">Luyện nói Tiếng Anh mỗi ngày sẽ giúp bạn phát
+                                                        âm chuẩn các từ trong tiếng Anh để có thể tự tin...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide item">
+                                            <div class="desc">
+                                                <a href=""><img src="./images/post3.jpeg" alt=""></a>
+                                                <div>
+                                                    <h2><a href="">5 Bí quyết luyện nói Tiếng Anh mỗi ngày</a></h2>
+                                                    <span>
+                                                        <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                        <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                    </span>
+                                                    <p class="desc-post">Luyện nói Tiếng Anh mỗi ngày sẽ giúp bạn phát
+                                                        âm chuẩn các từ trong tiếng Anh để có thể tự tin...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide item">
+                                            <div class="desc">
+                                                <a href=""><img src="./images/post2.jpeg" alt=""></a>
+                                                <div>
+                                                    <h2><a href="">5 Bí quyết luyện nói Tiếng Anh mỗi ngày</a></h2>
+                                                    <span>
+                                                        <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                        <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                    </span>
+                                                    <p class="desc-post">Luyện nói Tiếng Anh mỗi ngày sẽ giúp bạn phát
+                                                        âm chuẩn các từ trong tiếng Anh để có thể tự tin...</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="btn-next">
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
-                                    <!-- <div class="swiper-pagination"></div> -->
                                 </div>
                             </div>
                         </div>
@@ -408,30 +479,264 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="trend-sidebar-item">
-                                            <a href=""><img src="./images/post6.jpg" alt=""></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-s-12 col-m-12 col-l-12 col-xl-12">
+                            <div class="marketing-articles">
+                                <div class="title">
+                                    <h2><i class="fa-solid fa-chart-line"></i>Marketing</h2>
+                                    <span><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></span>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="" class="img-post"><img src="./images/post2.jpeg" alt=""></a>
+                                        <div class="category-post">
+                                            <span><a href="#">Marketing</a></span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a></h2>
+                                            <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu đó
+                                                là lưu ký chứng
+                                                khoán. Vậy lưu ký...
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <a href="" class="img-post"><img src="./images/post2.jpeg" alt=""></a>
+                                        <div class="category-post">
+                                            <span><a href="#">Marketing</a></span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a></h2>
+                                            <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu đó
+                                                là lưu ký chứng
+                                                khoán. Vậy lưu ký...
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <a href="" class="img-post"><img src="./images/post2.jpeg" alt=""></a>
+                                        <div class="category-post">
+                                            <span><a href="#">Marketing</a></span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a></h2>
+                                            <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu
+                                                đó
+                                                là lưu ký chứng
+                                                khoán. Vậy lưu ký...
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <a href="" class="img-post"><img src="./images/post2.jpeg" alt=""></a>
+                                        <div class="category-post">
+                                            <span><a href="#">Marketing</a></span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>
+                                                <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                <p><i class="fa-solid fa-eye"></i>1256</p>
+                                            </span>
+                                            <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a></h2>
+                                            <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu
+                                                đó
+                                                là lưu ký chứng
+                                                khoán. Vậy lưu ký...
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-s-12 col-m-12 col-l-12 col-xl-12">
+                            <div class="soft-skills">
+                                <div class="soft-skills-title">
+                                    <h2><i class="fa-solid fa-person-dots-from-line"></i>Kỹ Năng Mềm</h2>
+                                    <span><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></span>
+                                </div>
+                                <div class="soft-skills-content">
+                                    <div class="soft-skills-list">
+                                        <div class="soft-skills-item">
+                                            <a href="" class="img-post"><img src="./images/post2.jpeg" alt=""></a>
+                                            <div class="category-post">
+                                                <span><a href="#">Marketing</a></span>
+                                            </div>
                                             <div class="desc">
-                                                <h2><a href="">SOS nghĩa là gì? Khi nào nên sử dụng SOS? </a></h2>
                                                 <span>
                                                     <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
                                                     <p><i class="fa-solid fa-eye"></i>1256</p>
                                                 </span>
+                                                <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a>
+                                                </h2>
+                                                <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm
+                                                    hiểu đó
+                                                    là lưu ký chứng
+                                                    khoán. Vậy lưu ký...
+                                                </p>
                                             </div>
                                         </div>
-                                        <div class="trend-sidebar-item">
-                                            <a href=""><img src="./images/post6.jpg" alt=""></a>
+                                        <div class="soft-skills-item">
+                                            <a href="" class="img-post"><img src="./images/post3.jpeg" alt=""></a>
+                                            <div class="category-post">
+                                                <span><a href="#">Marketing</a></span>
+                                            </div>
                                             <div class="desc">
-                                                <h2><a href="">SOS nghĩa là gì? Khi nào nên sử dụng SOS? </a></h2>
                                                 <span>
                                                     <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
                                                     <p><i class="fa-solid fa-eye"></i>1256</p>
                                                 </span>
+                                                <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a>
+                                                </h2>
+                                                <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm
+                                                    hiểu đó
+                                                    là lưu ký chứng
+                                                    khoán. Vậy lưu ký...
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="soft-skills-item">
+                                            <a href="" class="img-post"><img src="./images/post3.jpeg" alt=""></a>
+                                            <div class="category-post">
+                                                <span><a href="#">Marketing</a></span>
+                                            </div>
+                                            <div class="desc">
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                                <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a>
+                                                </h2>
+                                                <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm
+                                                    hiểu đó
+                                                    là lưu ký chứng
+                                                    khoán. Vậy lưu ký...
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="soft-skills-item">
+                                            <a href="" class="img-post"><img src="./images/post3.jpeg" alt=""></a>
+                                            <div class="category-post">
+                                                <span><a href="#">Marketing</a></span>
+                                            </div>
+                                            <div class="desc">
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                                <h2><a href="#">Chứng quyền là gì? Những kiến thức cơ bản...</a>
+                                                </h2>
+                                                <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm
+                                                    hiểu đó
+                                                    là lưu ký chứng
+                                                    khoán. Vậy lưu ký...
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-s-12 col-m-12 col-l-12 col-xl-12">
+                            <div class="design-post">
+                                <div class="design-post-title">
+                                    <h2><i class="fa-regular fa-pen-to-square"></i>Thiết Kế</h2>
+                                    <span><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></span>
+                                </div>
+                                <div class="design-post-content">
+                                    <div class="design-post-list">
+                                        <div class="design-post-item">
+                                            <a href=""><img src="./images/post7.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">Tổng hợp các nguyên tắc thiết kế logo chuyên nghiệp
+                                                        nhất</a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                                <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu
+                                                    đó
+                                                    là lưu ký chứng
+                                                    khoán. Vậy lưu ký...
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="design-post-item">
+                                            <a href=""><img src="./images/post8.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">Tổng hợp các nguyên tắc thiết kế logo chuyên nghiệp
+                                                        nhất</a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                                <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu
+                                                    đó
+                                                    là lưu ký chứng
+                                                    khoán. Vậy lưu ký...
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="design-post-item">
+                                            <a href=""><img src="./images/post8.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">Tổng hợp các nguyên tắc thiết kế logo chuyên nghiệp
+                                                        nhất</a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                                <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu
+                                                    đó
+                                                    là lưu ký chứng
+                                                    khoán. Vậy lưu ký...
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="design-post-item">
+                                            <a href=""><img src="./images/post7.jpg" alt=""></a>
+                                            <div class="desc">
+                                                <h2><a href="">Tổng hợp các nguyên tắc thiết kế logo chuyên nghiệp
+                                                        nhất</a></h2>
+                                                <span>
+                                                    <p><i class="fa-regular fa-clock"></i>04/03/2022</p>
+                                                    <p><i class="fa-solid fa-eye"></i>1256</p>
+                                                </span>
+                                                <p class="desc-post">Thêm một khái niệm dành cho các nhà đầu tư tìm hiểu
+                                                    đó
+                                                    là lưu ký chứng
+                                                    khoán. Vậy lưu ký...
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -472,9 +777,10 @@
                                         <h1>Công Ty Cổ Phần Công Nghệ NTechs Việt Nam</h1>
                                     </div>
                                     <div class="footer-address__desc">
-                                        <p><span>Hà Nội:</span> Số 5 Đại Từ, Đại Kim, Hoàng Mai, Hà Nội </p>
-                                        <p><span>Email:</span> info.ntechs@gmail.com</p>
-                                        <p><span>Mobile:</span> 0969 464 154</p>
+                                        <p><span><i class="fa-solid fa-location-dot"></i></span> Số 5 Đại Từ, Đại Kim,
+                                            Hoàng Mai, Hà Nội </p>
+                                        <p><span><i class="fa-solid fa-envelope"></i></span> info.ntechs@gmail.com</p>
+                                        <p><span><i class="fa-solid fa-phone"></i></span> 0969 464 154</p>
                                     </div>
                                 </div>
                             </div>

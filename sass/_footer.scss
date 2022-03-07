@@ -1,10 +1,10 @@
 .footer-wrapper {
 
-    background-image: url(../images/bg-footer.png);
-    background-position: 9% 19%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    // background-image: url(../images/bg-footer.png);
+    // background-position: 9% 19%;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: #2C3238;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -24,6 +24,7 @@
                 text-align: center;
                 margin-left: -0.6em;
                 line-height: 1.6em;
+                color: $color-white;
             }
         }
 
@@ -32,19 +33,26 @@
 
             p span {
                 font-weight: 600;
-                color: $color-black;
+                color: $color-white;
+                width: 35px;
+                display: inline-block;
             }
 
             p {
                 line-height: 1.8em;
                 font-size: 1em;
-                color: #333;
+                color: $color-white;
+                font-weight: 300;
             }
         }
     }
 
     .service {
         padding-top: 5em;
+
+        &__title {
+            color: $color-white;
+        }
 
         ul {
             margin-top: 1em;
@@ -54,10 +62,12 @@
             }
 
             li a {
-                color: $color-black;
+                color: $color-white;
+                font-weight: 300;
 
                 &:hover {
                     color: $color-hover;
+                    text-decoration: underline;
                 }
             }
         }
@@ -65,19 +75,23 @@
         ul.social {
             li {
                 display: inline-block;
-                font-size: 1.3em;
+                font-size: 1.5em;
                 margin: 0 0.5em;
 
                 &:hover {
                     transform: scale(1.1);
                 }
+
+                a {
+                    color: $color-white;
+                }
             }
 
-            li:last-child a {
+            li:last-child a:hover {
                 color: red;
             }
 
-            li:first-child a {
+            li:first-child a:hover {
                 color: #2374E1;
             }
         }
@@ -87,7 +101,7 @@
 .footer {
 
     .coppyright {
-        background-color: $color-main;
+        background-color: #222222;
         text-align: left;
         padding: 1em 0;
         color: #bababa;

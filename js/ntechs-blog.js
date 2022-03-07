@@ -1,6 +1,6 @@
 AOS.init();
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.new-blog', {
     // Optional parameters
     loop: true,
 
@@ -20,18 +20,20 @@ const swiper = new Swiper('.swiper', {
     },
 
 });
-const sliderpost = new Swiper(".mySwiper", {
+const sliderpost = new Swiper(".slider-language", {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+        el: '.swiper-pagination',
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 3000,
     },
 });

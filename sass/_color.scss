@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
 $font-family:'Fira Sans',
 sans-serif;
-$color-main:#6460AA;
+$color-main:#084183;
 $color-hover-link:rgba(100, 96, 170, 0.05);
 $color-hover-border:rgba(100, 96, 170, 0.1);
 $color-pulse:rgba(100, 96, 170, 010);
@@ -9,7 +9,9 @@ $color:#c21fff;
 $color-black: #333;
 $color-white: #FFFFFF;
 $color-gray:#858a8f;
-$color-hover:#EEA530;
+$color-hover:#EB681B;
+$color-shadow:#000;
+$color-bg:#EFF0F2;
 
 * {
     margin: 0;
