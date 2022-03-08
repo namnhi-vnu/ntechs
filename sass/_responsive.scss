@@ -287,6 +287,29 @@
     }
 }
 
+@media only screen and (max-width: 991.98px) {
+    .post-content {
+        .post-content-detail {
+            .share-post {
+                position: relative;
+                text-align: center;
+                margin-top: 2em;
+                background-image: url('../images/bg-social.png') !important;
+                background-position: 17% 3% !important;
+                background-repeat: no-repeat;
+                padding: 2em 0;
+
+                .btn-share {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .top-bar {
         padding: 0 1em;
@@ -460,6 +483,27 @@
             .trend-item {
                 .desc {
                     grid-column: inherit;
+                }
+            }
+        }
+    }
+
+    .post-content {
+        .post-content-detail {
+            .share-post {
+                position: relative;
+                text-align: center;
+                margin-top: 2em;
+                background-image: url('../images/bg-social-m.png') !important;
+                background-repeat: no-repeat;
+                padding: 2em 0;
+
+                .btn-share {
+                    position: relative !important;
+                    top: 0;
+                    left: 0;
+                    transform: translate(0, 0);
+                    padding-top: 1em;
                 }
             }
         }
