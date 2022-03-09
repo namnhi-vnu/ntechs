@@ -648,6 +648,23 @@
     }
 
     // Blog
+    .banner-blog-main {
+        height: 150px;
+        padding: 30px 0 70px !important;
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    .content-blog .design-post-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .content-blog .blog-news-list {
+        height: 235px;
+    }
+
     .content-blog {
         .trend-news-blog {
             .trend-item {
