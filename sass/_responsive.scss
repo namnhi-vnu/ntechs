@@ -308,6 +308,20 @@
             }
         }
     }
+
+    .header-top.top-bar-blog {
+        position: relative;
+
+        .topbar-blog {
+            display: none;
+        }
+
+        .navbar-topbar-mobile {
+            display: block;
+            font-size: 2em;
+            padding-right: 1em;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -317,6 +331,14 @@
 
     .header .top-bar__list li a {
         font-size: 0.8em;
+    }
+
+    .header-top.top-bar-blog {
+        height: 75px;
+
+        .navbar-topbar-logos {
+            width: 120px;
+        }
     }
 
     .header-main {
@@ -348,6 +370,154 @@
 
                 ul {
                     display: none;
+                }
+            }
+        }
+    }
+
+    .category-menu-blog-mobile {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: $color-white;
+        width: 100%;
+        height: 100%;
+
+        .sub-menu {
+            padding: 1em;
+
+            li {
+                line-height: 2em;
+            }
+
+            li a {
+                width: 100%;
+                display: inline-block;
+            }
+        }
+    }
+
+    .category-menu-blog-mobile.active {
+        display: block;
+    }
+
+    body.active {
+
+        overflow: hidden;
+    }
+
+    .header-main-blog {
+
+        .navbar-menus-blog {
+            display: none;
+        }
+
+        // mobile
+        .navbar-menus-mobile-blog {
+            display: block;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li.item {
+                    flex: 1;
+                    text-align: center;
+
+                    span.item-close {
+                        display: none;
+                    }
+
+                    a {
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+                }
+
+                li.item.active {
+                    background-color: $color-white;
+
+                    a {
+                        display: none;
+                    }
+
+                    span.item-close {
+                        display: inline-block;
+                        width: 100%;
+                        padding: 1em 0.5em;
+                        color: $color-main;
+                        text-align: center;
+                        font-size: 1em;
+                    }
+                }
+
+                li {
+                    display: inline-block;
+                    position: relative;
+
+                    a i {
+                        padding-left: 0.5em;
+                    }
+
+                    // .sub-menu {
+                    //     display: none;
+                    //     position: absolute;
+                    //     top: 100%;
+                    //     left: 0;
+                    //     z-index: 99;
+                    //     min-width: 500px;
+                    //     background-color: #FFFFFF;
+
+                    //     li a {
+                    //         color: $color-main;
+                    //     }
+                    // }
+
+                    .form-search {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        right: 1em;
+                        z-index: 99;
+                        min-width: 300px;
+                        background-color: #fff;
+                        padding: 0.3em;
+                        border-radius: 6px;
+
+                        input {
+                            border: 1px solid #eee;
+                            padding: 0.5em;
+                            width: 100%;
+                        }
+                    }
+
+                    &:hover {
+
+                        .sub-menu {
+                            display: block;
+                        }
+
+                        .form-search {
+                            display: block;
+                        }
+                    }
+
+                }
+
+                li a {
+                    padding: 1em 0.5em;
+                    display: inline-block;
+                }
+
+                li a,
+                li {
+                    color: $color-white;
+                    text-transform: uppercase;
+                }
+
+                li:last-child {
+                    padding: 1em 0.5em;
                 }
             }
         }
@@ -488,6 +658,33 @@
         }
     }
 
+    .post-image-feature {
+        .post-img-content {
+            top: 10%;
+            padding: 1em;
+            justify-content: center;
+
+            h1.title {
+                font-size: 1.25em;
+            }
+
+            span {
+                flex-direction: column;
+                align-items: flex-start;
+
+                p {
+                    padding: 0.5em 0;
+                }
+            }
+
+            .ntechs-breadcrumbs {
+                a {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
     .post-content {
         .post-content-detail {
             .share-post {
@@ -508,4 +705,5 @@
             }
         }
     }
+
 }

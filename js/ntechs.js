@@ -5,7 +5,7 @@ const tabs = getall(".tab-item");
 const panes = getall(".products-list");
 const tabActive = getone(".tab-item.active");
 const line = getone(".line");
-// 
+
 const sety = getone('.year-of-operation');
 if (sety) {
     function getyearss() {

@@ -37,3 +37,21 @@ const sliderpost = new Swiper(".slider-language", {
         delay: 3000,
     },
 });
+
+const getone = document.querySelector.bind(document);
+const getall = document.querySelectorAll.bind(document);
+const categorylist = getall(".category-menu-blog-mobile");
+const menublog = getall(".navbar-menus-mobile-blog li.item");
+const menublogactive = getone(".navbar-menus-mobile-blog li.item.active");
+const bodys = getone("body");
+const btnclose = getall("span.item-close")
+
+menublog.forEach((tab, index) => {
+    const pane = categorylist[index];
+    tab.onclick = function () {
+        this.classList.toggle("active");
+        pane.classList.toggle("active");
+        bodys.classList.toggle("active");
+
+    };
+});
